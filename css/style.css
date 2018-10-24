@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+
+body .navbar-brand {
+  margin-left: 100px;
+}
+/*# sourceMappingURL=style.css.map */
