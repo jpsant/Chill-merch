@@ -16,30 +16,31 @@
 
     <nav class="navbar navbar-light">
         <div class="nav-right hidden-xs">
-            <div class="button" id="btn">
+            <div class="button" onclick="openNav()" id="btn">
                 <div class="bar top"></div>
                 <div class="bar middle"></div>
                 <div class="bar bottom"></div>
             </div>
         </div>
         <a class="navbar-brand" href="#">Chill Merch</a>
-        <button class="btn btn-lg">Hya</button>
     </nav>
 
     <!-- Sidebar -->
 
-
-    <!-- Header -->
-
-
-    <!-- Main -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
 
     <!-- Footer -->
-
+    
+    <script src="jquery/jquery-3.3.1.js"></script>
     <script src="js/index.js"></script>
     <script src="popper/popper.js"></script>
-    <script src="jquery/jquery-3.3.1.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
