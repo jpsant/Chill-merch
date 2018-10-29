@@ -1,20 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Krub:300");
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Arimo', sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body nav {
+  z-index: 1 !important;
+  background-color: white;
 }
 
 body nav .navbar-brand {
   display: table;
   margin: 0 auto;
+  font-family: 'Krub', sans-serif;
+  font-size: 2em;
 }
 
 body nav .bar {
   display: block;
   height: 3px;
-  width: 40px;
+  width: 35px;
   background-color: #181615;
   margin: 7px auto;
 }
@@ -30,7 +40,7 @@ body .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #111;
@@ -72,11 +82,8 @@ body .sidenav .closebtn {
 }
 
 @media screen and (min-width: 1000px) {
-  .button {
-    width: 0px;
-  }
   .bar {
-    width: 0px;
+    width: 0px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
