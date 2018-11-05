@@ -6,12 +6,6 @@
   transition: 0.4s;
 }
 
-@media screen and (min-width: 1365px) {
-  .navbar-light .navbar-brand {
-    color: black;
-  }
-}
-
 body {
   height: 100%;
   margin: 0;
@@ -113,12 +107,59 @@ body .sidenav .closebtn {
 }
 
 body header .header-img {
-  background-image: url("/images/carousel2.jpg");
+  background-image: url("/images/mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100vh;
   width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 1365px) {
+  body header .header-img {
+    background-image: url("/images/desktop.jpg");
+  }
+}
+
+body main {
+  background-color: #DDC4DD;
+}
+
+body main .main-text {
+  font-family: 'Krub', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: white;
+}
+
+body main .container-1 {
+  margin-left: 1%;
+  padding-bottom: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main .container-1 .img-1 {
+  background: url("/images/main-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+body main .container-1 .texto-1 {
+  text-align: center;
+  font-family: 'Krub', sans-serif;
+  color: white;
+  padding-top: 100%;
 }
 /*# sourceMappingURL=style.css.map */
