@@ -7,6 +7,15 @@ $desktop: 1365px;
     }
 }
 
+.navbar-light .navbar-brand {
+    color: white;
+    transition: 0.4s;
+
+    @include desktop {
+        color: black;
+    }
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -15,6 +24,7 @@ body {
     transition: .5s;
     nav {
         z-index: 1 !important;
+        transition: 0.4s;
         .transparent {
             border-width: 0px;
             -webkit-box-shadow: 0px 0px;
@@ -30,7 +40,6 @@ body {
             margin: 0 auto;
             font-family: 'Krub', sans-serif;
             font-size: 2em;
-            color: white;
         } // navbar button
         .bar {
             display: block;
@@ -49,11 +58,15 @@ body {
             margin: 0 auto;
         }
     }
-
     nav:hover {
-
-    }
- // sidenav
+        background-color: white;
+        .bar {
+            background-color: black;
+        }
+        .navbar-brand {
+            color: black;
+        }
+    } // sidenav
     .sidenav {
         height: 100%;
         width: 0;

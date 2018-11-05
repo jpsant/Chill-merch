@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 @import url("https://fonts.googleapis.com/css?family=Krub:300");
+.navbar-light .navbar-brand {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 1365px) {
+  .navbar-light .navbar-brand {
+    color: black;
+  }
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -11,6 +23,8 @@ body {
 
 body nav {
   z-index: 1 !important;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 body nav .transparent {
@@ -27,7 +41,6 @@ body nav .navbar-brand {
   margin: 0 auto;
   font-family: 'Krub', sans-serif;
   font-size: 2em;
-  color: white;
 }
 
 body nav .bar {
@@ -49,6 +62,18 @@ body nav .button {
   display: inline-block;
   width: auto;
   margin: 0 auto;
+}
+
+body nav:hover {
+  background-color: white;
+}
+
+body nav:hover .bar {
+  background-color: black;
+}
+
+body nav:hover .navbar-brand {
+  color: black;
 }
 
 body .sidenav {
