@@ -6,6 +6,20 @@
   transition: 0.4s;
 }
 
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.bar.black {
+  background-color: black;
+}
+
+.navbar-brand.black {
+  color: black;
+}
+
 body {
   height: 100%;
   margin: 0;
