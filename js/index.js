@@ -1,3 +1,9 @@
+AOS.init({
+    duration: 1300,
+    once: true
+});
+
+
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".fixed-top");
