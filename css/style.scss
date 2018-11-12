@@ -135,6 +135,7 @@ body {
         }
         .section-1 {
             background-color: #DDC4DD;
+            height: 89vh;
             .container-1 {
                 margin-left: 1%;
                 padding-bottom: 3%;
@@ -151,6 +152,7 @@ body {
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 }
                 .texto-1 {
+                    font-size: 1.7em;
                     text-align: center;
                     font-family: 'Krub', sans-serif;
                     color: white;
@@ -160,13 +162,14 @@ body {
         }
         .section-2 {
             background-color: #70F8BA;
+            height: 88vh;
             .container-2 {
                 margin-right: 1%;
-                padding-bottom: 3%;
-                padding-top: 3%;
+                padding-top: 7%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 .img-2 {
+                    margin-top: 12%;
                     grid-column: 2/3;
                     background: url("/images/main-2.jpg");
                     background-size: cover;
@@ -187,6 +190,7 @@ body {
         }
         .section-3 {
             background-color: #F4D58D;
+            height: 88vh;
             .container-3 {
                 margin-right: 1%;
                 margin-left: 1%;
