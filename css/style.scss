@@ -8,7 +8,6 @@ $desktop: 1365px;
 }
 
 // #FF8E72 salmon, #FFAF87 mac`n chesse, #ED6A5E pastel red.
-
 // Transições via Javascript
 .navbar-light .navbar-brand {
     color: white;
@@ -27,8 +26,12 @@ $desktop: 1365px;
 .navbar-brand.black {
     color: black;
 }
-// Transições via Javascript
 
+.nav-item.black {
+    color: black;
+}
+
+// Transições via Javascript
 body {
     height: 100%;
     margin: 0;
@@ -47,6 +50,18 @@ body {
             background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(0, 0, 0, 0.00)), color-stop( 100%, rgba(0, 0, 0, 0.00)));
             background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+        }
+        .nav-item {
+            font-family: 'Krub', sans-serif;
+            text-decoration: none;
+            font-size: 0em;
+            color: white;
+            display: block;
+            transition: 0.3s;
+
+            @include desktop {
+                font-size: 1.2em
+            }
         }
         .navbar-brand {
             // Centralizando elementos
@@ -78,6 +93,9 @@ body {
             background-color: black;
         }
         .navbar-brand {
+            color: black;
+        }
+        .nav-item {
             color: black;
         }
     } // sidenav
@@ -212,7 +230,7 @@ body {
                     border-radius: 5px;
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 }
-                .texto-3 { 
+                .texto-3 {
                     grid-row: 2/3;
                     text-align: center;
                     font-family: 'Krub', sans-serif;
@@ -242,12 +260,10 @@ body {
         background-color: #CEB5A7;
         color: white;
         text-align: center;
-
         .footer-content {
             width: 100%;
             margin-top: 5%;
             grid-column: 2/3;
-
             h3 {
                 font-size: 2.2em;
                 font-family: 'Krub', sans-serif;
@@ -256,7 +272,6 @@ body {
                 margin-top: -2%;
                 font-size: 1.3em;
             }
-
             .footer-icons {
                 cursor: pointer;
                 width: 20%;
