@@ -289,7 +289,7 @@ body main .section-2 .container-2 .texto-2 {
 
 body main .section-3 {
   background-color: #F4D58D;
-  height: 88vh;
+  height: 90vh;
 }
 
 body main .section-3 .container-3 {
@@ -319,6 +319,12 @@ body main .section-3 .container-3 .img-3 {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (min-width: 1365px) {
+  body main .section-3 .container-3 .img-3 {
+    margin-top: 0%;
+  }
+}
+
 body main .section-3 .container-3 .texto-3 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -327,6 +333,12 @@ body main .section-3 .container-3 .texto-3 {
   font-family: 'Krub', sans-serif;
   color: white;
   margin-top: 13%;
+}
+
+@media screen and (min-width: 1365px) {
+  body main .section-3 .container-3 .texto-3 {
+    margin-top: 5%;
+  }
 }
 
 body main .section-3 .container-3 .button {
@@ -340,6 +352,12 @@ body main .section-3 .container-3 .button {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media screen and (min-width: 1365px) {
+  body main .section-3 .container-3 .button {
+    width: 50%;
+  }
 }
 
 body main .section-3 .container-3 .button:hover {
@@ -380,5 +398,11 @@ body footer .footer-content .footer-icons {
   width: 20%;
   margin-bottom: 5%;
   padding-left: 1%;
+}
+
+@media screen and (min-width: 1365px) {
+  body footer .footer-content .footer-icons {
+    width: 7%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
