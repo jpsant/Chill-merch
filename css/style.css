@@ -341,14 +341,27 @@ body main .section-3 .container-3 .texto-3 {
   }
 }
 
+body main .section-3 .container-3 #wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body main .section-3 .container-3 .button {
   color: #F4B624;
   border: 1px solid white;
   background: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 10px;
-  margin-top: 10%;
-  font-size: 1.4em;
+  width: 60%;
+  height: 40%;
+  font-size: 1.3em;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
@@ -356,7 +369,7 @@ body main .section-3 .container-3 .button {
 
 @media screen and (min-width: 1365px) {
   body main .section-3 .container-3 .button {
-    width: 50%;
+    width: 20%;
   }
 }
 
