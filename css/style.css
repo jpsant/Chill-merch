@@ -303,32 +303,10 @@ body main .section-3 .container-3 {
       grid-template-rows: 2fr 1fr;
 }
 
-body main .section-3 .container-3 .img-3 {
-  background: url("/images/main-3.jpg");
+body main .section-3 .container-3 .texto-3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 15%;
-  width: 100%;
-  height: 200px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (min-width: 1365px) {
-  body main .section-3 .container-3 .img-3 {
-    margin-top: 0%;
-  }
-}
-
-body main .section-3 .container-3 .texto-3 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
   text-align: center;
   font-family: 'Krub', sans-serif;
   color: white;
@@ -342,6 +320,9 @@ body main .section-3 .container-3 .texto-3 {
 }
 
 body main .section-3 .container-3 #wrapper {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,7 +359,7 @@ body main .section-3 .container-3 .button:hover {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body footer {
+footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
@@ -388,7 +369,7 @@ body footer {
   text-align: center;
 }
 
-body footer .footer-content {
+footer .footer-content {
   width: 100%;
   margin-top: 5%;
   -ms-grid-column: 2;
@@ -396,17 +377,17 @@ body footer .footer-content {
   grid-column: 2/3;
 }
 
-body footer .footer-content h3 {
+footer .footer-content h3 {
   font-size: 2.2em;
   font-family: 'Krub', sans-serif;
 }
 
-body footer .footer-content h4 {
+footer .footer-content h4 {
   margin-top: -2%;
   font-size: 1.3em;
 }
 
-body footer .footer-content .footer-icons {
+footer .footer-content .footer-icons {
   cursor: pointer;
   width: 20%;
   margin-bottom: 5%;
@@ -414,7 +395,7 @@ body footer .footer-content .footer-icons {
 }
 
 @media screen and (min-width: 1365px) {
-  body footer .footer-content .footer-icons {
+  footer .footer-content .footer-icons {
     width: 7%;
   }
 }
