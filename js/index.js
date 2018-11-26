@@ -1,8 +1,8 @@
+
 AOS.init({
     duration: 1300,
     once: true
 });
-
 
 $(function () {
     $(document).scroll(function () {
@@ -25,3 +25,12 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 2,
+    draggable: true,
+    dots: '#dots',
+    arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+    }
+});

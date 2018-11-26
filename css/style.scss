@@ -241,6 +241,13 @@ body {
                 padding-top: 3%;
                 display: grid;
                 grid-template-rows: 2fr 1fr;
+                .glider-contain {
+                    padding: 0px;
+                    width: 75%;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    position: relative;
+                }
                 .texto-3 {
                     grid-row: 1/2;
                     text-align: center;

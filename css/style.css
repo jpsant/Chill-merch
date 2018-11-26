@@ -303,6 +303,14 @@ body main .section-3 .container-3 {
       grid-template-rows: 2fr 1fr;
 }
 
+body main .section-3 .container-3 .glider-contain {
+  padding: 0px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  position: relative;
+}
+
 body main .section-3 .container-3 .texto-3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
