@@ -38,10 +38,17 @@ body main .cards {
 }
 
 body main .cards .login {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   text-align: center;
   background-color: white;
   width: 100%;
+}
+
+body main .cards .login h3 {
+  font-family: 'Krub', sans-serif;
+  padding-top: 5%;
 }
 
 body main .cards .login form {
@@ -65,5 +72,6 @@ body main .cards .login form .button {
 
 body main .cards .login form .button:hover {
   background-color: #BCA0B3;
+  border: 1px solid #BCA0B3;
 }
 /*# sourceMappingURL=login.css.map */
