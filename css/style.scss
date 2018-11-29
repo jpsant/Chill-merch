@@ -332,9 +332,15 @@ footer {
         width: 100%;
         margin-top: 5%;
         grid-column: 2/3;
+        @include desktop {
+            margin-top: 3%;
+        }
         h3 {
-            font-size: 2.2em;
+            font-size: 2.3em;
             font-family: 'Krub', sans-serif;
+            @include desktop {
+                margin-bottom: 2%;
+            }
         }
         h4 {
             margin-top: -2%;
