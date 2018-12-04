@@ -19,13 +19,16 @@ body main .header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body main .header .titulo {
   font-family: 'Krub', sans-serif;
   color: white;
+  text-align: center;
+  font-size: 3em;
 }
 
 body main .cards {
@@ -46,16 +49,16 @@ body main .cards .login {
   width: 100%;
 }
 
-body main .cards .login h3 {
+body main .cards .login .card-title {
+  background-color: #BCA0B3;
   border-radius: 5px;
-  background-color: black;
+  padding-bottom: 5%;
+}
+
+body main .cards .login .card-title h3 {
   color: white;
   font-family: 'Krub', sans-serif;
-  padding-top: 10%;
-  margin: 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  padding-top: 6%;
 }
 
 body main .cards .login form {
@@ -80,5 +83,9 @@ body main .cards .login form .button {
 body main .cards .login form .button:hover {
   background-color: #BCA0B3;
   border: 1px solid #BCA0B3;
+}
+
+body main .cards .signup {
+  z-index: -1;
 }
 /*# sourceMappingURL=login.css.map */
