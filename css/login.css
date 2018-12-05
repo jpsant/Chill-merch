@@ -41,6 +41,7 @@ body main .cards {
 }
 
 body main .cards .login {
+  z-index: 1;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
@@ -110,5 +111,7 @@ body main .cards .info-text .info-button:hover {
 
 body main .cards .signup {
   z-index: -1;
+  position: absolute;
+  top: 100px;
 }
 /*# sourceMappingURL=login.css.map */
