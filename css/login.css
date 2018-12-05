@@ -85,6 +85,29 @@ body main .cards .login form .button:hover {
   border: 1px solid #BCA0B3;
 }
 
+body main .cards .info-text {
+  font-family: 'Krub', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body main .cards .info-text .info-button {
+  color: white;
+  border: 1px solid #FFA69E;
+  background-color: #FFA69E;
+  padding: 10px 10px;
+  margin: 5px;
+  cursor: pointer;
+  width: 60%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body main .cards .info-text .info-button:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 body main .cards .signup {
   z-index: -1;
 }
