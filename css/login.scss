@@ -127,3 +127,35 @@ body {
 .switch-bg {
     background-color: #FFC2BC;
 }
+
+@keyframes login-switch{
+    0%{
+        }
+    50%{
+        transform: translateX(-50%);
+        }
+    100%{
+        transform: translateX(0);
+        }
+}
+
+@keyframes signup-switch{
+    0%{
+        }
+    50%{
+        transform: translateX(50%);
+        }
+    100%{
+        transform: translateX(0);
+        }
+}
+
+.login-card{
+    animation: login-switch 2s forwards 0s ease-in-out;
+    z-index: -10;
+}
+
+.signup-card {
+    animation: signup-switch 2s forwards 0s ease-in-out;
+    z-index: 10;
+}

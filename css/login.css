@@ -162,4 +162,68 @@ body main .cards .signup form .button:hover {
 .switch-bg {
   background-color: #FFC2BC;
 }
+
+@-webkit-keyframes login-switch {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes login-switch {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes signup-switch {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes signup-switch {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.login-card {
+  -webkit-animation: login-switch 2s forwards 0s ease-in-out;
+          animation: login-switch 2s forwards 0s ease-in-out;
+  z-index: -10;
+}
+
+.signup-card {
+  -webkit-animation: signup-switch 2s forwards 0s ease-in-out;
+          animation: signup-switch 2s forwards 0s ease-in-out;
+  z-index: 10;
+}
 /*# sourceMappingURL=login.css.map */
