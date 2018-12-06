@@ -10,14 +10,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/login.css" />
 </head>
 
-<body>
+<body class="body">
     <main>
         <div class="header">
             <h1 class="titulo">ChillMerch</h1>
         </div>
 
         <div class="cards">
-            <!-- <div class="login">
+            <div class="login">
                 <div class="card-title">
                     <h3>login</h3>
                 </div>
@@ -36,8 +36,8 @@
             </div>
             <div class="info-text">
                 <h5>Ainda não possui uma conta?</h5>
-                <button type="button" class="info-button">Criar conta!</button>
-            </div> -->
+                <button type="button" id="switch" class="info-button">Criar conta!</button>
+            </div>
 
             <div class="signup">
                 <div class="card-title">
@@ -53,7 +53,7 @@
                         <label for="exampleInputPassword1">Senha</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
                     </div>
-                    <button type="submit" class="button">Entrar</button>
+                    <button type="submit" class="button">Confirmar</button>
                 </form>
             </div>
         </div>
@@ -61,6 +61,7 @@
         <footer></footer>
     </main>
 
+    <script src="/jquery/jquery-3.3.1.js"></script>
     <script src="/js/login.js"></script>
 </body>
 
