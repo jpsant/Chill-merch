@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Krub:300");
 body {
   background-color: #F2CEE6;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  overflow-y: hide;
 }
 
 body main {
@@ -93,6 +94,8 @@ body main .cards .info-text {
   font-family: 'Krub', sans-serif;
   color: white;
   text-align: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 body main .cards .info-text .info-button {
@@ -216,14 +219,22 @@ body main .cards .signup form .button:hover {
 }
 
 .login-card {
-  -webkit-animation: login-switch 2s forwards 0s ease-in-out;
-          animation: login-switch 2s forwards 0s ease-in-out;
-  z-index: -10;
+  -webkit-animation: login-switch 1s forwards 0s ease-in-out;
+          animation: login-switch 1s forwards 0s ease-in-out;
 }
 
 .signup-card {
-  -webkit-animation: signup-switch 2s forwards 0s ease-in-out;
-          animation: signup-switch 2s forwards 0s ease-in-out;
-  z-index: 10;
+  -webkit-animation: signup-switch 1s forwards 0s ease-in-out;
+          animation: signup-switch 1s forwards 0s ease-in-out;
+}
+
+.hide {
+  display: none;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.show {
+  display: show;
 }
 /*# sourceMappingURL=login.css.map */
