@@ -24,7 +24,6 @@ body {
             grid-row: 2/3;
             grid-column: 2/3;
             .login {
-                z-index: 1;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 5px;
                 text-align: center;
@@ -82,7 +81,7 @@ body {
                 }
             }
             .signup {
-                z-index: -1;
+                transition: 1s ease;
                 position: absolute;
                 top: 140px;
                 right: 45px;
@@ -152,19 +151,26 @@ body {
         }
 }
 
-.login-card{
+.login-animation {
     animation: login-switch 1s forwards 0s ease-in-out;
 }
 
-.signup-card {
+.signup-animation {
     animation: signup-switch 1s forwards 0s ease-in-out;
 }
 
 .hide {
+    opacity: 0;
     display: none;
     transition: 1s ease;
 }
 
 .show {
-    display: show;
+    opacity: 1;
+    display: inline;
+    transition: 1s ease;
+}
+
+.back {
+    z-index: -100;
 }
