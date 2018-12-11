@@ -4,7 +4,7 @@ $desktop: 1300px;
 body {
     background-color: #F2CEE6;
     transition: 1s ease;
-    overflow-y: hide;
+    overflow-x: hidden;
     main {
         display: grid;
         grid-template-rows: 1fr 3fr 1fr;
@@ -29,6 +29,7 @@ body {
                 text-align: center;
                 background-color: white;
                 width: 100%;
+                transition: 1s ease;
                 .card-title {
                     background-color: #BCA0B3;
                     border-radius: 5px;
@@ -79,6 +80,10 @@ body {
                 .info-button:hover {
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 }
+            }
+            .info-login {
+                background-color: #BCA0B3 !important;
+                border: 1px solid #BCA0B3 !important;
             }
             .signup {
                 transition: 1s ease;
@@ -136,7 +141,7 @@ body {
         transform: translateX(-50%);
         }
     100%{
-        transform: translateX(0);
+        transform: translateX(0%);
         }
 }
 
@@ -153,22 +158,48 @@ body {
 
 .login-animation {
     animation: login-switch 1s forwards 0s ease-in-out;
+
 }
 
 .signup-animation {
     animation: signup-switch 1s forwards 0s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes login-switch-back{
+    0%{
+        }
+    50%{
+        transform: translateX(-50%);
+        }
+    100%{
+        transform: translateX(0%);
+        }
+}
+
+@keyframes signup-switch-back{
+    0%{
+        }
+    50%{
+        transform: translateX(50%);
+        }
+    100%{
+        transform: translateX(0);
+        }
+}
+
+.login-animation-back {
+    animation: login-switch-back 1s forwards 0s ease-in-out;
+}
+
+.signup-animation-back {
+    animation: signup-switch-back 1s forwards 0s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 
 .hide {
     opacity: 0;
     display: none;
-    transition: 1s ease;
-}
-
-.show {
-    opacity: 1;
-    display: inline;
-    transition: 1s ease;
 }
 
 .back {

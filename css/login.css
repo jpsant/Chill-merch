@@ -3,7 +3,7 @@ body {
   background-color: #F2CEE6;
   -webkit-transition: 1s ease;
   transition: 1s ease;
-  overflow-y: hide;
+  overflow-x: hidden;
 }
 
 body main {
@@ -50,6 +50,8 @@ body main .cards .login {
   text-align: center;
   background-color: white;
   width: 100%;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 body main .cards .login .card-title {
@@ -114,6 +116,11 @@ body main .cards .info-text .info-button:hover {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+body main .cards .info-login {
+  background-color: #BCA0B3 !important;
+  border: 1px solid #BCA0B3 !important;
+}
+
 body main .cards .signup {
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -174,8 +181,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(-50%);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -187,8 +194,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(-50%);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -226,20 +233,77 @@ body main .cards .signup form .button:hover {
 .signup-animation {
   -webkit-animation: signup-switch 1s forwards 0s ease-in-out;
           animation: signup-switch 1s forwards 0s ease-in-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@-webkit-keyframes login-switch-back {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes login-switch-back {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes signup-switch-back {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes signup-switch-back {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.login-animation-back {
+  -webkit-animation: login-switch-back 1s forwards 0s ease-in-out;
+          animation: login-switch-back 1s forwards 0s ease-in-out;
+}
+
+.signup-animation-back {
+  -webkit-animation: signup-switch-back 1s forwards 0s ease-in-out;
+          animation: signup-switch-back 1s forwards 0s ease-in-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hide {
   opacity: 0;
   display: none;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-.show {
-  opacity: 1;
-  display: inline;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
 }
 
 .back {
