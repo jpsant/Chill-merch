@@ -184,8 +184,15 @@ body main .cards .signup {
 
 @media screen and (min-width: 1125px) {
   body main .cards .signup {
-    width: 21%;
-    right: 505px;
+    width: 23%;
+    right: 402px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  body main .cards .signup {
+    width: 22%;
+    right: 500px;
   }
 }
 
@@ -237,8 +244,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(-50%);
   }
   100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -250,8 +257,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(-50%);
   }
   100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -263,8 +270,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(50%);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -276,8 +283,8 @@ body main .cards .signup form .button:hover {
             transform: translateX(50%);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 

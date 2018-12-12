@@ -3,6 +3,7 @@ $medium: 480px;
 $large: 660px;
 $big: 900px;
 $desktop: 1125px;
+$hd: 1366px;
 
 @mixin medium {
     @media screen and (min-width: #{$medium}){
@@ -24,6 +25,12 @@ $desktop: 1125px;
 
 @mixin desktop {
     @media screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin hd {
+    @media screen and (min-width: #{$hd}) {
         @content;
     }
 }
@@ -147,8 +154,12 @@ body {
                     right: 280px;
                 }
                 @include desktop {
-                    width: 21%;
-                    right: 505px;
+                    width: 23%;
+                    right: 402px;
+                }
+                @include hd {
+                    width: 22%;
+                    right: 500px;
                 }
                 .card-title {
                     background-color: #FFA69E;
@@ -197,7 +208,7 @@ body {
         transform: translateX(-50%);
         }
     100%{
-        transform: translateX(0%);
+        transform: translateX(-10%);
         }
 }
 
@@ -208,7 +219,7 @@ body {
         transform: translateX(50%);
         }
     100%{
-        transform: translateX(0);
+        transform: translateX(-10%);
         }
 }
 
