@@ -15,6 +15,34 @@ body main {
       grid-template-columns: 1fr 5fr 1fr;
 }
 
+@media screen and (min-width: 480px) {
+  body main {
+    -ms-grid-columns: 2fr 4fr 2fr;
+        grid-template-columns: 2fr 4fr 2fr;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  body main {
+    -ms-grid-columns: 3fr 5fr 3fr;
+        grid-template-columns: 3fr 5fr 3fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body main {
+    -ms-grid-columns: 4fr 4fr 4fr;
+        grid-template-columns: 4fr 4fr 4fr;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  body main {
+    -ms-grid-columns: 5fr 3fr 5fr;
+        grid-template-columns: 5fr 3fr 5fr;
+  }
+}
+
 body main .header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -131,6 +159,34 @@ body main .cards .signup {
   text-align: center;
   background-color: white;
   width: 70%;
+}
+
+@media screen and (min-width: 480px) {
+  body main .cards .signup {
+    width: 53%;
+    right: 98px;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  body main .cards .signup {
+    width: 45%;
+    right: 160px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body main .cards .signup {
+    width: 32%;
+    right: 280px;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  body main .cards .signup {
+    width: 21%;
+    right: 505px;
+  }
 }
 
 body main .cards .signup .card-title {
@@ -307,6 +363,6 @@ body main .cards .signup form .button:hover {
 }
 
 .back {
-  z-index: -100;
+  z-index: -1;
 }
 /*# sourceMappingURL=login.css.map */
