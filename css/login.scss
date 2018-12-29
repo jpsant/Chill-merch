@@ -4,9 +4,8 @@ $large: 660px;
 $big: 900px;
 $desktop: 1125px;
 $hd: 1366px;
-
 @mixin medium {
-    @media screen and (min-width: #{$medium}){
+    @media screen and (min-width: #{$medium}) {
         @content;
     }
 }
@@ -35,7 +34,6 @@ $hd: 1366px;
     }
 }
 
-
 body {
     background-color: #F2CEE6;
     transition: 1s ease;
@@ -55,6 +53,9 @@ body {
         }
         @include desktop {
             grid-template-columns: 5fr 3fr 5fr;
+        }
+        @include hd {
+            grid-template-columns: 5fr 2.5fr 5fr;
         }
         .header {
             grid-row: 1/2;
@@ -158,8 +159,8 @@ body {
                     right: 402px;
                 }
                 @include hd {
-                    width: 22%;
-                    right: 500px;
+                    width: 20%;
+                    right: 600px;
                 }
                 .card-title {
                     background-color: #FFA69E;
@@ -201,31 +202,37 @@ body {
     background-color: #FFC2BC;
 }
 
-@keyframes login-switch{
-    0%{
-        }
-    50%{
-        transform: translateX(-50%);
-        }
-    100%{
-        transform: translateX(-10%);
-        }
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyframes signup-switch{
-    0%{
-        }
-    50%{
-        transform: translateX(50%);
-        }
-    100%{
+@keyframes login-switch {
+    0% {}
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
         transform: translateX(-10%);
-        }
+    }
+}
+
+@keyframes signup-switch {
+    0% {}
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
 }
 
 .login-animation {
     animation: login-switch 1s forwards 0s ease-in-out;
-
 }
 
 .signup-animation {
@@ -233,26 +240,28 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes login-switch-back{
-    0%{
-        }
-    50%{
-        transform: translateX(-50%);
-        }
-    100%{
-        transform: translateX(0%);
-        }
+.fade-animation {
+    animation: fade-in 1s forwards;
 }
 
-@keyframes signup-switch-back{
-    0%{
-        }
-    50%{
+@keyframes login-switch-back {
+    0% {}
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes signup-switch-back {
+    0% {}
+    50% {
         transform: translateX(50%);
-        }
-    100%{
+    }
+    100% {
         transform: translateX(0);
-        }
+    }
 }
 
 .login-animation-back {
@@ -261,7 +270,7 @@ body {
 
 .signup-animation-back {
     animation: signup-switch-back 1s forwards 0s ease-in-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hide {
@@ -272,4 +281,5 @@ body {
 .back {
     z-index: -1;
 }
+
 //classes relacionadas a troca de cards.

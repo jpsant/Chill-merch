@@ -43,6 +43,13 @@ body main {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  body main {
+    -ms-grid-columns: 5fr 2.5fr 5fr;
+        grid-template-columns: 5fr 2.5fr 5fr;
+  }
+}
+
 body main .header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -191,8 +198,8 @@ body main .cards .signup {
 
 @media screen and (min-width: 1366px) {
   body main .cards .signup {
-    width: 22%;
-    right: 500px;
+    width: 20%;
+    right: 600px;
   }
 }
 
@@ -234,6 +241,24 @@ body main .cards .signup form .button:hover {
 
 .switch-bg {
   background-color: #FFC2BC;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes login-switch {
@@ -298,6 +323,11 @@ body main .cards .signup form .button:hover {
           animation: signup-switch 1s forwards 0s ease-in-out;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fade-animation {
+  -webkit-animation: fade-in 1s forwards;
+          animation: fade-in 1s forwards;
 }
 
 @-webkit-keyframes login-switch-back {
