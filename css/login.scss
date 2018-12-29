@@ -4,6 +4,7 @@ $large: 660px;
 $big: 900px;
 $desktop: 1125px;
 $hd: 1366px;
+$full-hd: 1600px;
 @mixin medium {
     @media screen and (min-width: #{$medium}) {
         @content;
@@ -34,6 +35,12 @@ $hd: 1366px;
     }
 }
 
+@mixin full-hd {
+    @media screen and (min-width: #{$full-hd}) {
+        @content;
+    }
+}
+
 body {
     background-color: #F2CEE6;
     transition: 1s ease;
@@ -55,6 +62,9 @@ body {
             grid-template-columns: 5fr 3fr 5fr;
         }
         @include hd {
+            grid-template-columns: 5fr 2.7fr 5fr;
+        }
+        @include full-hd {
             grid-template-columns: 5fr 2.5fr 5fr;
         }
         .header {
@@ -159,8 +169,12 @@ body {
                     right: 402px;
                 }
                 @include hd {
+                    width: 21%;
+                    right: 500px;
+                }
+                @include full-hd {
                     width: 20%;
-                    right: 600px;
+                    right: 610px;
                 }
                 .card-title {
                     background-color: #FFA69E;

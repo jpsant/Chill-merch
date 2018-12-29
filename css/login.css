@@ -45,6 +45,13 @@ body main {
 
 @media screen and (min-width: 1366px) {
   body main {
+    -ms-grid-columns: 5fr 2.7fr 5fr;
+        grid-template-columns: 5fr 2.7fr 5fr;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body main {
     -ms-grid-columns: 5fr 2.5fr 5fr;
         grid-template-columns: 5fr 2.5fr 5fr;
   }
@@ -198,8 +205,15 @@ body main .cards .signup {
 
 @media screen and (min-width: 1366px) {
   body main .cards .signup {
+    width: 21%;
+    right: 500px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body main .cards .signup {
     width: 20%;
-    right: 600px;
+    right: 610px;
   }
 }
 
