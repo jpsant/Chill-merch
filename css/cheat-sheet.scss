@@ -1,0 +1,75 @@
+/*                                              ** CSS/HTML/JS CHEAT SHEET **                                                                                           */
+
+// MIXINS!!
+// normalmente mixin's são utilizados para resposividade! Exemplo:
+
+$HD: 1600px; //declaração de uma variável armazenando um valor de 1600px.
+@mixin hd {
+    @media screen and (min-width: #{$HD}) {
+        @content;                                   //Criação de um mixin, 
+    }
+}
+
+@include hd {
+    //conteudo da mixin!                            //utilização de uma mixin,
+}
+
+// CSS GRID!
+// de longe a coisa mais proveitosa que eu aprendi esse ano,
+// um sistema de Grids originária do css com a finalidade de estruturar sua aplicação web.
+// exemplo:
+
+.section-1 {
+    display: grid;                                // inicializando a grid,
+    grid-template-columns: 3fr 1fr 3fr;          // definindo três colunas e quanto espaço essas colunas irão ocupar,
+    grid-template-rows: 2fr 2fr;                //  definindo duas linhas e quanto de espaço esses dois segmentos irão ocupar,
+    
+    .section-child-1 {
+        grid-column: 1/2;           // definindo a área que essa child irá ocupar na section, da primeira pra segunda linha das colunas.
+        grid-row: 1/3;              // definindo a área que essa child irá ocupar,
+                                    // para melhor visualização, será ocupada a área de um quadrado na grid!
+        background-color: green;
+    }
+
+    .section-child-2 {
+        grid-column: 3/4;
+        grid-row: 1/3;               //ocupando a área de outro quadrado na grid, sendo que no lado direito, deixando o espaço no meio vazio.
+        background-color: blue;
+    }
+}
+
+
+//  ALINHAMENTO COM CSS GRID!
+
+// Existem dois tipos de alinhamento com o css grids, alinhamento em Bloco e alinhamento em Linha:
+// Alinhamento em bloco seria o alinhamento em "Colunas" e o alinhamento em linha seria o alinhamento de "Rows"
+// Exemplo: 
+
+.element-1 {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    justify-content: end;       // alinhando todos os "CHILD ELEMENTS" no fim da grid!
+
+    .element-child-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;           // centralizando os elementos pela "COLUNA"
+        justify-self: center;         // centralizando os elementos pela "ROW"
+    }
+
+    .element-child-2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: start;           // alinhando no começo os elementos pela "COLUNA"
+        justify-self: end;         // alinando no fim os elementos pela "ROW"
+    }
+}
+
+    // Coisas úteis utilizadas:
+
+.lista-exemplo {
+    list-style: none;           // tira os "BulletPoints" das listas,
+    margin: 0;                  // remove o padding e a margin para centralizar os elementos.
+    padding: 0;
+}
